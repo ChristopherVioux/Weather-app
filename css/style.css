@@ -7,6 +7,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     background: #222;
     background-image: url('https://source.unsplash.com/1600x900/?landscape');
+    background-size: cover;
     font-size: 120%;
   }
   
@@ -24,6 +25,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 30px;
   }
   
   button {
@@ -59,6 +61,17 @@ body {
     margin: 0;
     margin-bottom: 0.4em;
   }
+
+  .city {
+    font-weight: bolder;
+    font-size: 1.2em;
+  }
+
+  .temp {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font-size: 1.8em;
+  }
   
   .flex {
     display: flex;
@@ -67,7 +80,6 @@ body {
   
   .description {
     text-transform: capitalize;
-    margin-left: 8px;
   }
   
   .weather.loading {
@@ -78,7 +90,7 @@ body {
   
   .weather.loading:after {
     visibility: visible;
-    content: "Loading...";
+    content: "chargement...";
     color: white;
     position: absolute;
     top: 0;
